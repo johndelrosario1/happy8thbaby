@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>happy 8th baby 🌸</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="title-wrap">
+      <h1>happy 8th, baby</h1>
+      <p class="subtitle">101 favorite photos — click any photo to read the note</p>
+    </div>
+    <div class="controls">
+      <button id="exportBtn" class="btn">Export notes</button>
+      <button id="clearLocal" class="btn btn-outline">Clear saved notes</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery" class="gallery" aria-live="polite" aria-label="Image gallery">
+      <!-- JS will populate the grid with 101 images -->
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-panel" role="document">
+      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+      <div class="modal-content">
+        <img id="modalImg" alt="Selected image" />
+        <div class="note-area">
+          <label for="noteTextarea" class="note-label">Note (editable)</label>
+          <textarea id="noteTextarea" rows="6"></textarea>
+          <div class="modal-actions">
+            <button id="saveNote" class="btn">Save</button>
+            <button id="prevBtn" class="btn btn-outline">← Prev</button>
+            <button id="nextBtn" class="btn btn-outline">Next →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Made with love 💗 — happy monthsary</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* Pink floral theme, responsive grid */
+:root{
+  --pink-1: #ffd6e8;
+  --pink-2: #ff9ccf;
+  --accent: #ff6fa3;
+  --muted: #6b4b5b;
+  --card-shadow: 0 6px 20px rgba(107,75,91,0.12);
+  --gap: 14px;
+  --max-width: 1200px;
+  --radius: 14px;
+  --floral: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="%23ffd6e8"/><stop offset="1" stop-color="%23ff9ccf"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g)"/><g fill="%23ff6fa3" opacity="0.08"><circle cx="40" cy="40" r="30"/><circle cx="180" cy="100" r="24"/><circle cx="300" cy="40" r="20"/></g></svg>');
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0;
+  background: var(--floral), linear-gradient(180deg, var(--pink-1), #fff 45%);
+  color: var(--muted);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:24px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* Header */
+.site-header{
+  width:100%;
+  max-width:var(--max-width);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:18px;
+}
+.title-wrap h1{
+  margin:0;
+  font-size:32px;
+  letter-spacing:0.6px;
+  color:#7a2943;
+  text-transform:lowercase;
+}
+.subtitle{
+  margin:4px 0 0;
+  font-size:13px;
+  color:#7a2943aa;
+}
+.controls .btn{
+  margin-left:8px;
+}
+
+/* Gallery grid */
+.gallery{
+  width:100%;
+  max-width:var(--max-width);
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: var(--gap);
+  align-items:start;
+  padding-bottom:32px;
+}
+
+/* Tile */
+.tile{
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+  border-radius: var(--radius);
+  overflow:hidden;
+  box-shadow: var(--card-shadow);
+  position:relative;
+  cursor:pointer;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.tile:focus-within,
+.tile:hover{ transform: translateY(-6px); box-shadow: 0 12px 30px rgba(107,75,91,0.14); }
+.tile img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+  display:block;
+  vertical-align:middle;
+  transition: transform .3s ease;
+}
+.tile .caption{
+  padding:10px;
+  font-size:13px;
+  color:#7a2943;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.tile .index{
+  background: linear-gradient(90deg,#ffbcd6,#ff8fc2);
+  color:white;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  box-shadow: 0 4px 10px rgba(255,111,149,0.15);
+}
+
+/* Modal */
+.modal{ display:none; position:fixed; inset:0; z-index:60; align-items:center; justify-content:center; }
+.modal[aria-hidden="false"]{ display:flex; }
+.modal-backdrop{ position:absolute; inset:0; background:rgba(22,12,12,0.45); backdrop-filter: blur(6px); }
+.modal-panel{
+  position:relative;
+  margin:auto;
+  z-index:65;
+  width:90%;
+  max-width:960px;
+  border-radius:20px;
+  overflow:hidden;
+  background: linear-gradient(180deg, #fff, #fff5fb);
+  box-shadow: 0 24px 60px rgba(107,75,91,0.28);
+}
+.modal-close{
+  position:absolute;
+  right:12px;
+  top:12px;
+  background:transparent;
+  border:0;
+  font-size:20px;
+  cursor:pointer;
+}
+.modal-content{
+  display:flex;
+  gap:18px;
+  padding:18px;
+  align-items:flex-start;
+}
+.modal-content img{
+  width:48%;
+  max-height:70vh;
+  object-fit:contain;
+  border-radius:12px;
+  background:#fff;
+  box-shadow: var(--card-shadow);
+}
+.note-area{ width:48%; display:flex; flex-direction:column; }
+.note-label{ font-size:13px; margin-bottom:8px; color:#7a2943; }
+#noteTextarea{
+  width:100%;
+  resize:vertical;
+  border:1px solid #f0cfe0;
+  border-radius:10px;
+  padding:10px;
+  font-size:14px;
+  min-height:180px;
+  background:linear-gradient(180deg, #fff, #fff7fb);
+  color:#4b2a3a;
+}
+.modal-actions{ display:flex; gap:8px; margin-top:12px; align-items:center; }
+
+/* Buttons */
+.btn{
+  background: linear-gradient(90deg,var(--accent),#ff88b7);
+  border:0;
+  color:white;
+  padding:8px 12px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+.btn-outline{
+  background:transparent;
+  border:1px solid #ffd6e8;
+  color:var(--muted);
+}
+
+/* Footer */
+.site-footer{ margin-top:18px; color:#7a2943aa; font-size:13px; }
+
+/* Small screens */
+@media (max-width:720px){
+  .modal-content{ flex-direction:column; }
+  .modal-content img, .note-area{ width:100%; }
+  .tile img{ height:110px; }
+  .title-wrap h1{ font-size:26px; }
+}
