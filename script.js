@@ -7,7 +7,7 @@
 /* ----------------- CONFIG: Replace these 101 entries ----------------- */
 const images = [
   // Example entries (you MUST replace these with your 101 actual image paths)
-  { src: "mygirl/1.jpg", note: "The first picture of something i made for you, so cute" },
+  { src: "mygirl/1.jpg", note: "10/14/25 Hi my dearest, I just wanted you to know, I had a tiring day. I keep thinking about you while im in class, I really miss you, I want to hear your voice to cleans my fatigue. I love you always" },
   { src: "mygirl/2.jpg", note: "Your pic going to work, Saw you as a hard working woman" },
   { src: "mygirl/3.jpg", note: "You said you didn't like chem but loved teaching, I can definitely see it in the future" },
   { src: "mygirl/4.jpg", note: "One of your favorite poses, which suites you. You look cute TT" },
