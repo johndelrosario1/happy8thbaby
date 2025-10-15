@@ -8,7 +8,7 @@
 const images = [
   // Example entries (you MUST replace these with your 101 actual image paths)
   { src: "mygirl/1.jpg", note: "10/14/25 To my dearest, Riri, I just wanted you to know that I had a tiring day. I keep thinking about you while im in class, I really miss you, I want to hear your voice to cleanses my fatigue. I love you always Yours truly, Jm" },
-  { src: "mygirl/2.jpg", note: "Your pic going to work, Saw you as a hard working woman" },
+  { src: "mygirl/2.jpg", note: "10/15/25 To my dearest, Riri, Hi again, I miss you so much my babi, today we discussed about sa capstone namin kasi mahihirapan kami sa gamification and after ng class pumunta kami sm para mag ktv, I sang a song for youuuu hehe I love you always Yours truly, Jm" },
   { src: "mygirl/3.jpg", note: "You said you didn't like chem but loved teaching, I can definitely see it in the future" },
   { src: "mygirl/4.jpg", note: "One of your favorite poses, which suites you. You look cute TT" },
   { src: "mygirl/5.jpg", note: "That smile of yours captivates me" },
