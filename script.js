@@ -10,7 +10,7 @@ const images = [
   { src: "mygirl/1.jpg", note: "10/14/25 To my dearest, Riri, I just wanted you to know that I had a tiring day. I keep thinking about you while im in class, I really miss you, I want to hear your voice to cleanse my fatigue. I love you always Yours truly, Jm" },
   { src: "mygirl/2.jpg", note: "10/15/25 To my dearest, Riri, Hi again, I miss you so much my babi, today we discussed about sa capstone namin kasi mahihirapan kami sa gamification and after ng class pumunta kami sm para mag ktv, I sang a song for youuuu hehe I love you always Yours truly, Jm" },
   { src: "mygirl/3.jpg", note: "10/16/25 To my dearest, Dumplings,Hiiii, Na late ako kanina sa first subject huhu may summative pa naman kami pero buti umabot ako hehehe, grabe yung linakad namin from 9th floor- basement tapos balik ulit sa 9th floor tas ayun wala din class kasi walang computer sa room eh laboratory yung class tapos nung uwian na ktv sana ulit kami pero sarado hehhe ayun lang. I love you alwaysss.  Yours truly, Jm" },
-  { src: "mygirl/4.jpg", note: "10/17/2025 To my dearest, Coconat, Hi baby kumusta ka? Are you okay? I keep thinking about you. I miss you and I love you always. Yours truly, Jm " },
+  { src: "mygirl/4.jpg", note: "10/17/2025 To my dearest, Coconat, Hi baby kumusta ka? Are you okay? I keep thinking about you stay hydrated and safe please tulog ka rin ng mahimbing lagi. I miss you and I love you always. Yours truly, Jm " },
   { src: "mygirl/5.jpg", note: "That smile of yours captivates me" },
   { src: "mygirl/6.jpg", note: "The shape of your eyes that oddly fits your glasses" },
   { src: "mygirl/7.jpg", note: "Your silliness makes me giggle T_T " },
